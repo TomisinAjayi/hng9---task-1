@@ -1,0 +1,26 @@
+.profile {
+    text-align: center;
+    margin-top: 64px;
+}
+#profile__img {
+    width: 88px;
+    height: 88px;
+    border-radius: 275px;
+    border: 1px solid transparent;
+    background-image: url('../profile.jpg');
+    background-size: cover;
+    margin: 0 auto;
+}
+#profile__img:hover {
+    width: 88px;
+    height: 88px;
+    border-radius: 275px;
+    border: 1px solid transparent;
+    background: linear-gradient(0deg, rgba(52, 64, 84, 0.75), rgba(52, 64, 84, 0.75)), url('../profile.jpg');
+}
+.camera {
+    display: none;
+}
+#profile__img:hover + .camera {
+    display: block;
+}
