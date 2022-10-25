@@ -1,0 +1,37 @@
+.links {
+    text-align: center;
+    margin: 56px 112px;
+}
+.links p {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 32px;
+    gap: 8px;
+    width: 1152px;
+    height: 76px;
+    background: #EAECF0;
+    border: 1px solid #EAECF0;
+    border-radius: 8px;
+    margin-bottom: 24px;
+}
+.links p a {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #101828;
+    text-decoration: none;
+}
+#socials {
+    border: none;
+    background: transparent;
+}
+#socials svg {
+    margin-left: 24px;
+}

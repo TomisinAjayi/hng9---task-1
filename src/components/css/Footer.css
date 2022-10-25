@@ -1,0 +1,30 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 148px 113px 48px;
+}
+.red {
+    color: rgba(231, 51, 43, 1);
+}
+.footer p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #667085;
+    flex: none;
+    order: 1;
+    flex-grow: 1;
+}
+.I4G-logo {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDXhWYQvB_nVyVbV1h46MsHSatQzy6Ne6unQ&usqp=CAU');
+    width: 132.13px;
+    height: 36px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
