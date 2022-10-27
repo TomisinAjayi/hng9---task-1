@@ -2,6 +2,27 @@
     text-align: center;
     margin-top: 64px;
 }
+.share {
+    cursor: pointer;
+    margin-left: 50%;
+    background: #FFFFFF;
+    border: 1px dashed #D0D5DD;
+    border-radius: 20px;
+    padding: 10px;
+}
+.share:hover {
+    background: #F9FAFB;
+}
+.share:focus {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 0px 4px #F2F4F7;
+}
+.share:disabled {
+    background: #F9FAFB;
+}
+.mobile-share {
+    display: none;
+}
 #profile__img {
     width: 88px;
     height: 88px;
@@ -21,10 +42,26 @@
 }
 .camera {
     display: none;
+    margin-top: 61px;
 }
 #profile__img:hover + .camera {
     display: block;
 }
 .profile-name {
     margin-top: 24px;
+}
+#slack {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .mobile-share {
+        display: block;
+        margin-left: 72%;
+        padding: 8px;
+        width: 40px;    
+    }
+    .web-share {
+        display: none;
+    }
 }
