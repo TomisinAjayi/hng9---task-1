@@ -48,3 +48,8 @@
     border: none;
     background: transparent;
 }
+@media screen and (max-width: 768px) {
+    .links {
+        margin: 56px 20px;
+    }
+}
