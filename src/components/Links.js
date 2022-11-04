@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import './css/Links.css';
 
 const Links = () => {
@@ -11,9 +12,10 @@ const Links = () => {
             <a href="https://books.zuri.team/python-for-beginners?ref_id=TomisinAjayi" id="book__python">Python Books</a>
             <a href="https://background.zuri.team" id="pitch">Background Check for Coders</a>
             <a href="https://books.zuri.team/design-rules" id="book__design">Design Books</a>
+            <Link to="/contact" id="contact">Contact</Link>
             
             <p id="socials">
-                <a href="#">
+                <a href="slackName:TomisinAjayi">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M19.8752 11.2498C20.9106 11.2498 21.75 10.4104 21.75 9.37496V9.37496C21.75 8.33952 20.9105 7.50012 19.8751 7.50012V7.50012C18.8395 7.50012 18 8.33959 18 9.37512V11.2498H19.8752ZM14.625 11.2498C15.6605 11.2498 16.5 10.4103 16.5 9.3748V4.12512C16.5 3.08959 15.6605 2.25012 14.625 2.25012V2.25012C13.5895 2.25012 12.75 3.08959 12.75 4.12512V9.3748C12.75 10.4103 13.5895 11.2498 14.625 11.2498V11.2498Z" fill="#2EB67D"/>
                     <path d="M4.12484 12.7502C3.08939 12.7502 2.25 13.5896 2.25 14.625V14.625C2.25 15.6605 3.08947 16.4999 4.12492 16.4999V16.4999C5.16045 16.4999 6 15.6604 6 14.6249V12.7502H4.12484ZM9.375 12.7502C8.33947 12.7502 7.5 13.5897 7.5 14.6252V19.8749C7.5 20.9104 8.33947 21.7499 9.375 21.7499V21.7499C10.4105 21.7499 11.25 20.9104 11.25 19.8749V14.6252C11.25 13.5897 10.4105 12.7502 9.375 12.7502V12.7502Z" fill="#E01E5A"/>
@@ -35,7 +37,7 @@ const Links = () => {
                 </svg>
                 </a>
             </p>
-           
+            
         </div>
     );
 }

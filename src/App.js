@@ -1,14 +1,15 @@
-import Profile from './components/Profile';
-import Links from './components/Links';
-import Footer from './components/Footer';
+import Layout from "./components/Layout";
+import Contact from "./components/Contact";
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 const App = () => {
   return (
-    <div>
-      <Profile />
-      <Links />
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
