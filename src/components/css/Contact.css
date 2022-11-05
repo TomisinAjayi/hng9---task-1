@@ -50,10 +50,13 @@ input {
     border: 1px solid #D0D5DD;
     box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
     border-radius: 8px;
+    color: #101828;
+    outline: none;
 }
 input:focus {
     border: 1px solid #84CAFF;
 }
+
 #last_name {
     margin-left: 24px;
 }
@@ -71,6 +74,20 @@ textarea {
     border: 1px solid #D0D5DD;
     box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
     border-radius: 8px;
+    resize: none;
+    outline: none;
+}
+textarea:focus {
+    border: 1px solid #84CAFF;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px #D1E9FF;
+}
+textarea:invalid {
+    border: 1px solid #F89687;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+}
+textarea:focus:invalid {
+    border: 1px solid #F89687;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px #FFD3CC;
 }
 ::placeholder {
     font-family: 'Inter';
@@ -88,7 +105,19 @@ input[type="checkbox"] {
     border-radius: 6px;
     margin-top: 26px;
     vertical-align: sub;
-
+}
+input[type="checkbox"]:checked {
+    background: #F9FAFB;
+    border: 1px solid #1570EF;
+}
+input[type="checkbox"]:focus {
+    background: #FFFFFF;
+    border: 1px solid #84CAFF;
+    box-shadow: 0px 0px 0px 4px #D1E9FF;
+}
+input[type="checkbox"]:disabled {
+    background: #F2F4F7;
+    border: 1px solid #D0D5DD;
 }
 .agreement {
     font-family: 'Inter';
@@ -98,6 +127,7 @@ input[type="checkbox"] {
     line-height: 24px;
     color: #475467;
 }
+
 #btn__submit {
     margin-top: 32px;
     justify-content: center;
@@ -118,6 +148,21 @@ input[type="checkbox"] {
     color: #FFFFFF;
     cursor: pointer;
 }
+#btn__submit:hover {
+    background: #175CD3;
+    border: 1px solid #175CD3;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+}
+#btn__submit:focus {
+    background: #1570EF;
+    border: 1px solid #1570EF;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px #D1E9FF;
+}
+#btn__submit:disabled {
+    background: #B2DDFF;
+    border: 1px solid #B2DDFF;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+}
 .errors {
     font-family: 'Inter';
     font-style: normal;
@@ -126,6 +171,7 @@ input[type="checkbox"] {
     line-height: 20px;
     color: #F83F23;
 }
+
 @media screen and (max-width: 768px) {
     .container {
         width: 90%;

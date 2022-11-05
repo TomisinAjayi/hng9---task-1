@@ -14,8 +14,9 @@ const Contact = () => {
 
     const checkValidation = () => {
         let errors = validate;
+        let message = document.getElementById('message1');
 
-        if (!values.message1.trim()) {
+        if (message.value == "") {
             errors.message1 = "Please enter a message";
         } else {
             errors.message1 = "";
@@ -39,7 +40,7 @@ const Contact = () => {
                     <h3>Contact Me</h3>
                     <p>Hi there, contact me to ask me about anything you have in mind.</p>
                 </header>
-                <form method="POST" action="/" onSubmit={handleSubmit}>
+                <form method="post" action="/" onSubmit={handleSubmit}>
                     <div className="name-row">
                         <div className="fname">
                             <label htmlFor="first_name">First name</label>
@@ -67,9 +68,9 @@ const Contact = () => {
                         <input type="checkbox" />
                         You agree to providing your data to who may contact you.
                     </div>
-                    <button type="submit" id="btn__submit">
-                        Send message
-                    </button>
+                    <div>
+                        <input type="submit" id="btn__submit" value="Send message" />
+                    </div>
                 </form>
             </div>
             <Footer />
